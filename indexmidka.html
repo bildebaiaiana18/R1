@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the Quiz Game</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="welcome-container">
+        <h1>Welcome to the Quiz Game!</h1>
+        <p>Press the button below to start the quiz.</p>
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+<style>
+    /* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Контейнер приветствия */
+.welcome-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.welcome-container:hover {
+    transform: scale(1.05);
+}
+
+/* Заголовок */
+h1 {
+    font-size: 2.5rem;
+    color: lightpink;
+    margin-bottom: 20px;
+}
+
+/* Текст */
+p {
+    font-size: 1.2rem;
+    color: deeppink;
+    margin-bottom: 30px;
+}
+
+/* Кнопка */
+button {
+    background-color: lightpink;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: palevioletred;
+}
+
+/* Эффект при нажатии */
+button:active {
+    transform: scale(0.98);
+}
+
+</style>
+    <script>
+        function startQuiz() {
+            // Перенаправление на страницу викторины
+            window.location.href = "index.html"; // Убедитесь, что файл викторины называется "quiz.html"
+        }
+    </script>
+</body>
+</html>
